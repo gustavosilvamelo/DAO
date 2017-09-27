@@ -38,7 +38,8 @@ class Sql extends PDO {
  
 	}
 
-	public function select($rawQuery, $params = array()){
+	public function select($rawQuery, $params = array()):array
+	{
 
 		$stmt = $this->query($rawQuery, $params);
 
